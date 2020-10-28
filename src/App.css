@@ -1,0 +1,18 @@
+:root {
+  --fucsia: #d55f8f;
+  --pink: #f298a6;
+  --white: #faf3e3;
+  --green: #ace087;
+  --facebook-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background: var(--white);
+  font-family: 'Poppins', sans-serif;
+  /* Fonts: 300, 400, 500, 700 */
+  font-weight: 400;
+}
+
+.container {
+  padding: 15px 20px 0;
+}

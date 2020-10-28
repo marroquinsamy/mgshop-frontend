@@ -13,10 +13,6 @@
   ],
   "author": "Samuel Marroquín G.",
   "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/marroquinsamy/mgshop-frontend/issues"
-  },
-  "homepage": "https://github.com/marroquinsamy/mgshop-frontend#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",

@@ -1,0 +1,20 @@
+h4,
+p {
+  margin: 5px auto;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+p {
+  font-weight: 400;
+}
+
+.product-card {
+  border-radius: 12px;
+  box-shadow: var(--facebook-shadow);
+  padding: 13px;
+  border: 3px dashed var(--green);
+}
