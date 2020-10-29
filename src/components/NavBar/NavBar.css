@@ -1,18 +1,33 @@
 nav {
   height: 60px;
-  border-radius: 0 0 12px 12px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   padding: 10px;
-  outline: none;
+  border-bottom: 3px dashed var(--green);
+  border-left: 3px dashed var(--green);
+  border-right: 3px dashed var(--green);
+  box-shadow: var(--facebook-shadow);
+  border-radius: 0 0 12px 12px;
+  margin: 0 10px;
 }
 
 .link {
   color: black;
+  max-width: 40%;
   text-decoration: none;
-  width: 20%;
-  margin: 5px;
   text-align: center;
-  padding: 7px;
+  padding: 7px 3px;
   border-radius: 12px;
+  font-weight: 700;
+}
+
+.link:hover {
+  text-decoration: underline solid var(--green);
+}
+
+img {
+  height: 40px;
+  margin-left: 15px;
+  margin-right: 25px;
 }

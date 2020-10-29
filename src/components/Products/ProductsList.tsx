@@ -33,13 +33,15 @@ const ProductsList = () => {
   return (
     <div>
       <h3>Productos</h3>
-      {products.map((product) => (
-        <ProductsItem
-          product={product}
-          key={product._id}
-          loadProducts={loadProducts}
-        />
-      ))}
+      <div className="product-item-container">
+        {products.map((product) => (
+          <ProductsItem
+            product={product}
+            key={product._id}
+            loadProducts={loadProducts}
+          />
+        ))}
+      </div>
     </div>
   )
 }

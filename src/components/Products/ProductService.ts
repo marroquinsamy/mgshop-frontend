@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { IProduct } from './Product'
 
-const API = 'http://192.168.0.112:4000'
+export const API = 'http://192.168.0.112:4000'
 
 export const getProducts = async () => {
   return await axios.get<IProduct[]>(`${API}/products`)

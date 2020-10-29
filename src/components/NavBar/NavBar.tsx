@@ -6,6 +6,9 @@ const NavBar = () => {
   return (
     <div>
       <nav>
+        <Link to="/">
+          <img src="/logowb.png" alt="" />
+        </Link>
         <Link className="link" to="/">
           Productos
         </Link>
