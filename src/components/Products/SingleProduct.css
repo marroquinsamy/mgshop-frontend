@@ -1,0 +1,34 @@
+.single-product {
+  width: 95%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.single-product-description {
+  font-size: 1.2em;
+}
+
+.single-product-price {
+  padding: 12px;
+  background-color: var(--green);
+  width: fit-content;
+  font-size: 1.6em;
+  border-radius: 12px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.single-product-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.single-product-image {
+  max-width: 400px;
+  width: 80%;
+  border-radius: 12px;
+}
+
+.single-product-image:hover {
+  cursor: pointer;
+}

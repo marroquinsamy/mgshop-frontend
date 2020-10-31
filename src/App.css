@@ -4,21 +4,38 @@
   --white: #faf3e3;
   --green: #ace087;
   --facebook-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  --text: black;
+  --invert-text: white;
+}
+
+html {
+  height: 100%;
 }
 
 body {
-  background: var(--white);
+  background-color: var(--white);
   font-family: 'Poppins', sans-serif;
   /* Fonts: 300, 400, 500, 700 */
   font-weight: 400;
+  position: relative;
+  min-height: 100%;
 }
 
 .container {
   padding: 15px 20px 0;
+  padding-bottom: 200px;
 }
 
-h3 {
-  text-align: center;
+.page-title,
+.page-subtitle {
+  margin: 15px auto;
+}
+
+.page-title {
   font-size: 1.7em;
-  margin: 9px 0;
+  text-align: center;
+}
+
+.page-subtitle {
+  font-size: 1.1em;
 }

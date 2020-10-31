@@ -1,4 +1,4 @@
-nav {
+.main-navbar {
   height: 60px;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@ nav {
   margin: 0 10px;
 }
 
-.link {
+.main-navbar-link {
   color: black;
   max-width: 40%;
   text-decoration: none;
@@ -20,13 +20,15 @@ nav {
   padding: 7px 3px;
   border-radius: 12px;
   font-weight: 700;
+  transform: scale(1);
+  transition: all 0.25s ease;
 }
 
-.link:hover {
-  text-decoration: underline solid var(--green);
+.main-navbar-link:hover {
+  transform: scale(1.1);
 }
 
-img {
+.main-navbar-logo {
   height: 40px;
   margin-left: 15px;
   margin-right: 25px;

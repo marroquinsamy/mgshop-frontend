@@ -4,19 +4,17 @@ import './NavBar.css'
 
 const NavBar = () => {
   return (
-    <div>
-      <nav>
-        <Link to="/">
-          <img src="/logowb.png" alt="" />
-        </Link>
-        <Link className="link" to="/">
-          Productos
-        </Link>
-        <Link className="link" to="/about">
-          Acerca de nosotros
-        </Link>
-      </nav>
-    </div>
+    <nav className="main-navbar">
+      <Link to="/">
+        <img className="main-navbar-logo" src="/logowb.png" alt="" />
+      </Link>
+      <Link className="main-navbar-link" to="/">
+        Productos
+      </Link>
+      <Link className="main-navbar-link" to="/about">
+        Acerca de nosotros
+      </Link>
+    </nav>
   )
 }
 

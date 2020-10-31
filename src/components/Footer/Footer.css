@@ -1,0 +1,61 @@
+.main-footer {
+  background-color: var(--fucsia);
+  height: 130px;
+  padding: 10px;
+  color: var(--invert-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.separator {
+  height: 90%;
+  width: 1px;
+  background-color: var(--invert-text);
+  opacity: 0.3;
+}
+
+.company-information,
+.credits {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.7;
+}
+
+.main-footer-logo {
+  width: 100px;
+  margin: auto;
+}
+
+.credits {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.footer-links {
+  color: inherit;
+  width: fit-content;
+  margin: auto;
+  text-decoration: none;
+}
+
+.footer-social {
+  margin: auto;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 40px;
+  margin: 10px auto;
+}
+
+.name-link:hover {
+  text-decoration: underline;
+}

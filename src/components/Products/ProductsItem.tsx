@@ -1,9 +1,6 @@
 import React from 'react'
+import { Link, useHistory } from 'react-router-dom'
 import { IProduct } from './Product'
-// import { useHistory } from 'react-router-dom'
-import { Link } from 'react-router-dom'
-import 'boxicons'
-// import * as productService from './ProductService'
 import './ProductsItem.css'
 import { API } from './ProductService'
 
@@ -13,29 +10,27 @@ interface IProps {
 }
 
 const ProductsItem = ({ product, loadProducts }: IProps) => {
-  /* const history = useHistory()
-
-  const handleDelete = async (id: string) => {
-    await productService.deleteProduct(id)
-    loadProducts()
-  } */
+  const history = useHistory()
 
   return (
-    <div className="product-card">
-      <h4>{product.title}</h4>
-      <p>{product.description}</p>
+    <div
+      className="product-card"
+      onClick={() => history.push(`/products/${product._id}`)}
+    >
+      <h4 className="product-title">{product.title}</h4>
+      <p className="product-description">{product.description}</p>
       <img
         src={`${API}/${product.imagePath}`}
         className="product-picture"
         alt=""
       />
-      <div className="price-container">
+      <footer className="product-footer">
         <span className="price">Q{product.price}</span>
-        <Link to="/product/" className="more-details">
+        <Link className="more-details" to={`/products/${product._id}`}>
           <i className="bx bx-right-arrow-alt"></i>
           Más detalles
         </Link>
-      </div>
+      </footer>
     </div>
   )
 }

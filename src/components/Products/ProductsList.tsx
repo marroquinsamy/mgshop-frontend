@@ -31,8 +31,8 @@ const ProductsList = () => {
   }, [])
 
   return (
-    <div>
-      <h3>Productos</h3>
+    <div className="products-list">
+      <h2 className="page-title">Productos</h2>
       <div className="product-item-container">
         {products.map((product) => (
           <ProductsItem
