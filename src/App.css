@@ -1,11 +1,11 @@
 :root {
   --fucsia: #d55f8f;
   --pink: #f298a6;
-  --white: #faf3e3;
+  --background-color: #fff;
   --green: #ace087;
   --facebook-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-  --text: black;
-  --invert-text: white;
+  --text: #000;
+  --inverted-text: #fff;
 }
 
 html {
@@ -13,29 +13,81 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--background-color);
   font-family: 'Poppins', sans-serif;
   /* Fonts: 300, 400, 500, 700 */
   font-weight: 400;
   position: relative;
   min-height: 100%;
+  color: var(--text);
+}
+
+.Toastify__toast {
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
-  padding: 15px 20px 0;
-  padding-bottom: 200px;
+  padding: 15px 20px 200px;
 }
 
-.page-title,
-.page-subtitle {
-  margin: 15px auto;
+.page {
+  width: 100%;
 }
 
-.page-title {
+.page__title {
   font-size: 1.7em;
   text-align: center;
 }
 
-.page-subtitle {
+.page__subtitle {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.page__subtitle-center {
+  text-align: center;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 13px;
+  border: 3px dashed grey;
+  width: 90%;
+}
+
+.card-green {
+  border: 3px dashed var(--green);
+}
+
+.card-fucsia {
+  border: 3px dashed var(--fucsia);
+}
+
+.card-pink {
+  border: 3px dashed var(--pink);
+}
+
+.card__title {
   font-size: 1.1em;
+  margin: 0;
+}
+
+.card__title-center {
+  text-align: center;
+}
+
+.card__text {
+  font-weight: 400;
+  margin: 7px 0;
+  line-height: 1.5;
+}
+
+.list {
+  padding-left: 30px;
+}
+
+.link {
+  color: var(--fucsia);
+  text-decoration: underline;
+  cursor: pointer;
 }

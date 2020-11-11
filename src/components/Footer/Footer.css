@@ -1,8 +1,8 @@
-.main-footer {
+.footer {
   background-color: var(--fucsia);
   height: 130px;
   padding: 10px;
-  color: var(--invert-text);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@
 .separator {
   height: 90%;
   width: 1px;
-  background-color: var(--invert-text);
+  background-color: #fff;
   opacity: 0.3;
 }
 
@@ -29,7 +29,7 @@
   opacity: 0.7;
 }
 
-.main-footer-logo {
+.company-information__logo {
   width: 100px;
   margin: auto;
 }
@@ -39,23 +39,19 @@
   font-size: 0.9em;
 }
 
-.footer-links {
+.footer__link {
   color: inherit;
   width: fit-content;
   margin: auto;
   text-decoration: none;
 }
 
-.footer-social {
+.company-information__section {
   margin: auto;
 }
 
-.icon {
+.footer__icon {
   cursor: pointer;
   font-size: 40px;
   margin: 10px auto;
-}
-
-.name-link:hover {
-  text-decoration: underline;
 }

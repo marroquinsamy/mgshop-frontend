@@ -1,25 +1,33 @@
 import React from 'react'
 import './Footer.css'
 
-const Footer = () => {
+interface IProps {
+  copyWhatsApp: () => void
+}
+
+const Footer = (props: IProps) => {
   return (
-    <footer className="main-footer">
+    <footer className="footer">
       <section className="company-information">
-        <img src="/logowbweco.png" alt="" className="main-footer-logo" />
-        <div className="footer-social">
+        <img
+          src="/logowbweco.png"
+          alt=""
+          className="company-information__logo"
+        />
+        <section className="company-information__section">
           <a
             target="_blank"
             rel="noreferrer"
             href="https://facebook.com/mgshopgt"
-            className="footer-links"
+            className="footer__link"
           >
-            <i className="bx bxl-facebook-circle icon"></i>
+            <i className="bx bxl-facebook-circle footer__icon"></i>
           </a>
           <i
-            className="bx bxl-whatsapp icon"
-            onClick={() => alert('Nuestro WhatsApp: +502 4269 5893')}
+            className="bx bxl-whatsapp footer__icon"
+            onClick={props.copyWhatsApp}
           ></i>
-        </div>
+        </section>
       </section>
       <div className="separator"></div>
       <section className="credits">
@@ -27,15 +35,15 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
           href="https://github.com/marroquinsamy"
-          className="footer-links"
+          className="footer__link"
         >
-          <i className="bx bxl-github icon"></i>
+          <i className="bx bxl-github footer__icon"></i>
         </a>
-        Written and developed by{' '}
+        Written and developed by
         <a
           target="_blank"
           rel="noreferrer"
-          className="footer-links name-link"
+          className="footer__link"
           href="https://github.com/marroquinsamy"
         >
           Samuel Marroquín G.

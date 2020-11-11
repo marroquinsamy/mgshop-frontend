@@ -1,4 +1,4 @@
-.main-navbar {
+.navbar {
   height: 60px;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
   margin: 0 10px;
 }
 
-.main-navbar-link {
+.navbar__link {
   color: black;
   max-width: 40%;
   text-decoration: none;
@@ -24,11 +24,15 @@
   transition: all 0.25s ease;
 }
 
-.main-navbar-link:hover {
+.navbar__link:hover {
   transform: scale(1.1);
 }
 
-.main-navbar-logo {
+.navbar__link:active {
+  opacity: 0.8;
+}
+
+.navbar__logo {
   height: 40px;
   margin-left: 15px;
   margin-right: 25px;

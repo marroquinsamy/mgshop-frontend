@@ -31,9 +31,9 @@ const ProductsList = () => {
   }, [])
 
   return (
-    <div className="products-list">
-      <h2 className="page-title">Productos</h2>
-      <div className="product-item-container">
+    <div className="page">
+      <h2 className="page__title">Productos</h2>
+      <div className="container-products">
         {products.map((product) => (
           <ProductsItem
             product={product}

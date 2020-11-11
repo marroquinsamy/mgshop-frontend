@@ -13,25 +13,29 @@ const ProductsItem = ({ product, loadProducts }: IProps) => {
   const history = useHistory()
 
   return (
-    <div
-      className="product-card"
+    <article
+      className="card card-pink card-product"
       onClick={() => history.push(`/products/${product._id}`)}
     >
-      <h4 className="product-title">{product.title}</h4>
-      <p className="product-description">{product.description}</p>
+      <h4 className="card__title">{product.title}</h4>
+      <p className="card__text card__text-limited">{product.description}</p>
       <img
         src={`${API}/${product.imagePath}`}
-        className="product-picture"
+        className="card__picture"
         alt=""
       />
-      <footer className="product-footer">
-        <span className="price">Q{product.price}</span>
-        <Link className="more-details" to={`/products/${product._id}`}>
-          <i className="bx bx-right-arrow-alt"></i>
-          Más detalles
+      <footer className="footer-card">
+        <div className="price">
+          <i className="bx bxs-coin price__icon"></i>
+          <span className="price__currency">Q</span>
+          <span className="price__number">{product.price}</span>
+        </div>
+        <Link className="footer-card__link" to={`/products/${product._id}`}>
+          <i className="bx bx-right-arrow-alt footer-card__icon"></i>
+          <span className="footer-card__text">Más detalles</span>
         </Link>
       </footer>
-    </div>
+    </article>
   )
 }
 

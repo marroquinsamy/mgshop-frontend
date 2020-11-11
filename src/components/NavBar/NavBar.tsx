@@ -4,14 +4,14 @@ import './NavBar.css'
 
 const NavBar = () => {
   return (
-    <nav className="main-navbar">
+    <nav className="navbar">
       <Link to="/">
-        <img className="main-navbar-logo" src="/logowb.png" alt="" />
+        <img className="navbar__logo" src="/logowb.png" alt="" />
       </Link>
-      <Link className="main-navbar-link" to="/">
+      <Link className="navbar__link" to="/">
         Productos
       </Link>
-      <Link className="main-navbar-link" to="/about">
+      <Link className="navbar__link" to="/about">
         Acerca de nosotros
       </Link>
     </nav>
